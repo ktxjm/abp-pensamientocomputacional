@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PrePAES</title>
+    <!-- Enlaza los estilos de Material-UI (Asegúrate de agregar las dependencias necesarias) -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+
+    <!-- Enlaza la fuente de iconos de Material Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <!-- Incluye el archivo CSS de Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <!-- Enlaza la biblioteca Swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/algebra.js/0.2.3/algebra.min.js"
+        integrity="sha512-OiE3A4uqffNO68+uChIVA08aSA5rwEYnTAgth4I64dLBAi//daGZefG9FHIB7TPgPOQ++EWFOxyWu7OUeKebuQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/9.4.4/math.min.js"></script>
+    <!-- Estilos personalizados -->
+
+    <link rel="stylesheet" href="assets/styles.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/algebra.js/0.2.3/algebra.min.js"
+        integrity="sha512-OiE3A4uqffNO68+uChIVA08aSA5rwEYnTAgth4I64dLBAi//daGZefG9FHIB7TPgPOQ++EWFOxyWu7OUeKebuQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/9.4.4/math.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@3.10.2/dist/locale/es.js"></script>
+</head>
+
+<body class="bg-gray-100" id="inicio">
+    <nav class="navbar-bg sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-2">
+            <div class="flex justify-between items-center">
+                <div class="navbar-logo" style="background-image: url('assets/images/logo.png')"></div>
+                <div class="md:hidden">
+                    <a href="#" id="mobile-menu-button">
+                        <i class="text-white text-2xl material-icons">menu</i>
+                    </a>
+                </div>
+                <ul class="hidden md:flex space-x-4 items-center" id="main-menu">
+                    <li><a href="#inicio" class="text-white text-lg">Inicio</a></li>
+                    <li><a href="#problema" class="text-white text-lg">Problemas</a></li>
+                    <li><a href="#material" class="text-white text-lg">Material de estudio</a></li>
+                    <li><a href="#calendar" class="text-white text-lg">Calendario</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var mobileMenuButton = document.getElementById("mobile-menu-button");
+            var mainMenu = document.getElementById("main-menu");
+
+            mobileMenuButton.addEventListener("click", function () {
+                mainMenu.classList.toggle("hidden");
+            });
+        });
+    </script>
+
+
+
+
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <!-- Primera diapositiva -->
+            <div class="swiper-slide">
+                <div class="slider-container">
+                    <div class="slider-overlay"></div>
+                    <div class="slider-content">
+                        <h1>PrePAES 2024</h1>
+                        <p>
+                            Prepara tu camino hacia el éxito en el examen PAES con nuestra
+                            app en matemáticas. Accede a lecciones interactivas, práctica de
+                            ejercicios y material de estudio actualizado para asegurarte de
+                            alcanzar tus metas académicas.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Segunda diapositiva -->
+            <div class="swiper-slide">
+                <div class="slider-container">
+                    <div class="slider-overlay"></div>
+                    <div class="slider-content">
+                        <h1>Ejercita tu Mente</h1>
+                        <p>
+                            ¿Necesitas práctica para la PAES? Nuestra app te ofrece miles de
+                            problemas que pondrán a prueba tus habilidades matemáticas.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tercera diapositiva -->
+            <div class="swiper-slide">
+                <div class="slider-container">
+                    <div class="slider-overlay"></div>
+                    <div class="slider-content">
+                        <h1>Aprende, Practica y Triunfa</h1>
+                        <p>
+                            Nuestra app te guiará en tu camino hacia el éxito. Aprende y
+                            practica en cualquier momento y en cualquier lugar, y prepárate
+                            para triunfar en la PAES.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Encabezado de la Sección -->
+    <section class="bg-blue-900 text-white py-12 text-center pb-20">
+        <h2 class="text-4xl font-bold mb-4">Frase Motivadora</h2>
+        <div class="container text-xl mx-auto" id="fraseMotivadora"></div>
+    </section>
+
+
+    <section class="py-12 text-center mx-6 md:mx-60" id="introduccion">
+        <div class="container mx-auto px-4 bg-white rounded-lg shadow-lg p-6">
+            <h3 class="text-2xl font-bold mb-4">
+                Bienvenido a PrePAES: Tu Compañero de Estudio para Matemáticas
+            </h3>
+            <p class="text-gray-700">
+                PrePAES es la aplicación perfecta para aquellos estudiantes que se
+                están preparando para enfrentar el desafío de la PAES de matemáticas.
+                Nuestra aplicación está diseñada pensando en ayudarte a alcanzar tus
+                metas académicas y a alcanzar el éxito en esta importante prueba de
+                aptitudes.
+            </p>
+        </div>
+    </section>
+
+
+    <section class="py-12 text-center mx-6 md:mx-60" id="problema">
+        <div class="container mx-auto px-4 bg-gray-100 rounded-lg shadow-lg p-6">
+            <section class="problem-section">
+                <h2>Generador de Problemas de Matemáticas</h2>
+                <div class="problem-options">
+                    <label for="problem-type">Selecciona el tipo de problema:</label>
+                    <select id="problem-type">
+                        <option value="porcentaje">Porcentaje</option>
+                        <option value="numeros-enteros">Números enteros</option>
+                        <option value="numeros-racionales">
+                            Simplificacón de fracciones
+                        </option>
+                        <option value="potencias-raices">Potencias y raíces</option>
+                        <option value="logaritmos">Logaritmos</option>
+                        <option value="geometria">Geometría</option>
+                        <option value="geometria3d">Geometría Figuras 3D</option>
+                        <option value="medidas-tendencia-central">
+                            Medidas de tendencia central y rango
+                        </option>
+                    </select>
+                </div>
+                <div id="problem-container"></div>
+                <div id="solution-container"></div>
+                <button id="generate-btn">Generar Problema Nuevo</button>
+                <button id="solution-btn">Ver Solución</button>
+            </section>
+        </div>
+    </section>
+
+
+
+    <section class="py-12 text-center mx-6 md:mx-60" id="material">
+        <div class="container mx-auto px-4 bg-white rounded-lg shadow-lg p-6">
+            <h2 class="text-2xl font-bold mb-4">Material de estudio</h2>
+            <div class="flex justify-center space-x-4">
+                <a href="https://drive.google.com/drive/folders/1wUUyPx7wDoJIsfgpeDGWckU3DwUXxmwr"
+                    class="group transition-transform transform-gpu hover:scale-105" target="_blank">
+                    <div class="relative">
+                        <img src="assets/images/iconocarpeta.png" alt="Carpeta 1"
+                            class="w-40 h-40 object-cover rounded-lg shadow-lg" />
+                        <div
+                            class="absolute inset-x-0 bottom-0 h-16 flex items-center justify-center bg-black bg-opacity-80 group-hover:bg-opacity-90 transition-opacity">
+                            <span class="text-white text-lg font-semibold">Contenidos</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://drive.google.com/drive/folders/1WTFuW7Cbkling64sZJ5TXaMdeOmLy7-p"
+                    class="group transition-transform transform-gpu hover:scale-105" target="_blank">
+                    <div class="relative">
+                        <img src="assets/images/iconocarpeta.png" alt="Carpeta 2"
+                            class="w-40 h-40 object-cover rounded-lg shadow-lg" />
+                        <div
+                            class="absolute inset-x-0 bottom-0 h-16 flex items-center justify-center bg-black bg-opacity-80 group-hover:bg-opacity-90 transition-opacity">
+                            <span class="text-white text-lg font-semibold">ejercicios</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://drive.google.com/drive/folders/1IPTF5dDf5IyfvTMP1ZloayqZZEkUE2-X"
+                    class="group transition-transform transform-gpu hover:scale-105" target="_blank">
+                    <div class="relative">
+                        <img src="assets/images/iconocarpeta.png" alt="Carpeta 3"
+                            class="w-40 h-40 object-cover rounded-lg shadow-lg" />
+                        <div
+                            class="absolute inset-x-0 bottom-0 h-16 flex items-center justify-center bg-black bg-opacity-80 group-hover:bg-opacity-90 transition-opacity">
+                            <span class="text-white text-lg font-semibold">Resumen</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://drive.google.com/drive/folders/1RnJQg9xL0JQ4CUM0UdirGDhVAUxw4Zhm"
+                    class="group transition-transform transform-gpu hover:scale-105" target="_blank">
+                    <div class="relative">
+                        <img src="assets/images/iconocarpeta.png" alt="Carpeta 4"
+                            class="w-40 h-40 object-cover rounded-lg shadow-lg" />
+                        <div
+                            class="absolute inset-x-0 bottom-0 h-16 flex items-center justify-center bg-black bg-opacity-80 group-hover:bg-opacity-90 transition-opacity">
+                            <span class="text-white text-lg font-semibold">Tips</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <script type="importmap">
+  {
+    "imports": {
+      "@fullcalendar/core": "https://cdn.skypack.dev/@fullcalendar/core@6.1.8",
+      "@fullcalendar/daygrid": "https://cdn.skypack.dev/@fullcalendar/daygrid@6.1.8"
+    }
+  }
+</script>
+
+    <div id="calendar"></div>
+
+    <!-- Incluye el script de Swiper (Asegúrate de agregar las dependencias necesarias) -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/frases.js"></script>
+    <script src="assets/js/slider.js"></script>
+    <script src="assets/js/problemas.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var calendarEl = document.getElementById("calendar");
+            var calendar = new FullCalendar.Calendar(calendarEl, {
+                initialView: "dayGridMonth",
+                events: [
+                    {
+                        title: "Números Enteros",
+                        start: "2023-10-02",
+                    },
+                    {
+                        title: "Potencias",
+                        start: "2023-10-04",
+                    },
+                    {
+                        title: "Raices",
+                        start: "2023-10-06",
+                    },
+                    {
+                        title: "Ecuaciones",
+                        start: "2023-10-09",
+                    },
+                    {
+                        title: "Ecuaciones de Segundo Grado",
+                        start: "2023-10-11",
+                    },
+                    {
+                        title: "Geometria",
+                        start: "2023-10-13",
+                    },
+                    {
+                        title: "Porcentajes",
+                        start: "2023-10-16",
+                    },
+                    {
+                        title: "Probabilidad y Estadistica",
+                        start: "2023-10-18",
+                    },
+                    {
+                        title: "Números racionales",
+                        start: "2023-10-20",
+                    },
+                    {
+                        title: "Algebra",
+                        start: "2023-10-23",
+                    },
+                    {
+                        title: "Logaritmos",
+                        start: "2023-10-25",
+                    },
+                    {
+                        title: "Porcentajes",
+                        start: "2023-10-27",
+                    },
+                    {
+                        title: "Ecuaciones",
+                        start: "2023-10-30",
+                    },
+                ],
+                locales: "es",
+                firstDay: 1,
+            });
+            calendar.render();
+        });
+    </script>
+</body>
+
+</html>

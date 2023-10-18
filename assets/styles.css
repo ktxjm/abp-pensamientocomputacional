@@ -1,0 +1,316 @@
+ body {
+     margin: 0;
+     padding: 0;
+     font-family: 'Roboto', sans-serif;
+ }
+
+ /* Estilos personalizados para el navbar */
+ .navbar-bg {
+     background-color: #333;
+     /* Cambio de color a uno más oscuro */
+     position: relative;
+     /* Añade posición relativa para manejar z-index */
+     z-index: 999;
+     /* Valor alto de z-index para que esté por encima de todo */
+ }
+
+ .navbar-logo {
+     /* Cambio del contenido por un logo */
+
+     background-size: contain;
+     background-repeat: no-repeat;
+     width: 150px;
+     /* Ancho máximo para pantallas pequeñas */
+     height: 60px;
+     /* Altura máxima para pantallas pequeñas */
+ }
+
+ .navbar-link {
+     color: #fff;
+     font-size: 1rem;
+ }
+
+ .navbar-link:hover {
+     color: #e0e0e0;
+ }
+
+ /* Estilos para el icono del menú */
+ .menu-icon {
+     font-size: 1.5rem;
+ }
+
+ /* Elimina el margen inferior de la imagen de logo */
+ .navbar-logo img {
+     margin-bottom: 0;
+ }
+
+ /* Estilos personalizados para el slider */
+ .slider-container {
+     position: relative;
+
+     height: 500px;
+     /* Altura del slider (ajusta según tus necesidades) */
+ }
+
+ .slider-overlay {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.2));
+     /* Fondo con gradiente negro y opacidad del 75% */
+ }
+
+ .slider-content {
+     position: absolute;
+     top: 50%;
+     /* Ajusta la posición vertical del texto */
+     left: 50%;
+     transform: translate(-50%, -50%);
+     text-align: center;
+     color: #fff;
+     padding-left: 30px;
+     /* Agrega relleno a la izquierda */
+     padding-right: 30px;
+     /* Agrega relleno a la derecha */
+ }
+
+ .slider-content h1 {
+     font-size: 3rem;
+     margin-bottom: 1rem;
+     width: 400px;
+ }
+
+ .slider-content p {
+     font-size: 1.1rem;
+     margin-top: 1rem;
+     /* Ajusta la distancia entre el título y el párrafo */
+ }
+
+ .slider-image {
+     max-width: 130px;
+     /* Ajusta el tamaño de la imagen */
+     position: absolute;
+     top: 20%;
+     /* Ajusta la posición vertical de la imagen */
+     left: 50%;
+     transform: translateX(-50%);
+ }
+
+
+
+
+
+
+
+ /* Estilos personalizados para el navbar */
+ .navbar-bg {
+     background-color: #333;
+     /* Cambio de color a uno más oscuro */
+     position: relative;
+     /* Añade posición relativa para manejar z-index */
+     z-index: 999;
+     /* Valor alto de z-index para que esté por encima de todo */
+ }
+
+ .navbar-logo {
+     /* Cambio del contenido por un logo */
+
+     background-size: contain;
+     background-repeat: no-repeat;
+     width: 150px;
+     /* Ancho máximo para pantallas pequeñas */
+     height: 60px;
+     /* Altura máxima para pantallas pequeñas */
+ }
+
+ .navbar-link {
+     color: #fff;
+     font-size: 1rem;
+ }
+
+ .navbar-link:hover {
+     color: #e0e0e0;
+ }
+
+ /* Estilos para el icono del menú */
+ .menu-icon {
+     font-size: 1.5rem;
+ }
+
+ /* Elimina el margen inferior de la imagen de logo */
+ .navbar-logo img {
+     margin-bottom: 0;
+ }
+
+ /* Estilos personalizados para el slider */
+ .swiper-container {
+     background-repeat: no-repeat;
+     background-image: url('images/img1.jpg');
+     width: 100%;
+     height: 100vh;
+     /* Altura automática según el contenido */
+     overflow: hidden;
+     /* Oculta el desplazamiento horizontal */
+
+     /* Ruta de la imagen de fondo */
+     background-size: cover;
+     /* Ajusta la imagen para que quepa completamente dentro del contenedor */
+     background-position: center;
+ }
+
+ .swiper-slide {
+     background-size: cover;
+     background-position: center;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     text-align: center;
+     min-height: 300px;
+     /* Altura mínima para evitar que las diapositivas sean demasiado pequeñas */
+ }
+
+ .swiper-slide img {
+     max-width: 100%;
+     /* Asegura que las imágenes se ajusten correctamente */
+ }
+
+
+ /* Estilos personalizados para el navbar sticky */
+ .navbar-bg.sticky {
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     z-index: 999;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+ #calendar {
+     margin: 0 100px;
+ }
+
+ .fc-header-toolbar {
+     background-color: #333333;
+     border: none;
+     border-radius: 5px;
+     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+     padding: 10px;
+ }
+
+ .fc-header-toolbar .fc-toolbar-chunk {
+     display: flex;
+     align-items: center;
+ }
+
+ .fc-toolbar-title {
+     flex: 1;
+     font-size: 18px;
+     font-weight: bold;
+     color: #ffffff;
+ }
+
+ .fc-button-primary {
+     background-color: #1a8cff;
+     border-color: #1a8cff;
+ }
+
+ .fc-button-primary:hover {
+     background-color: #0066cc;
+     border-color: #0066cc;
+ }
+
+ .fc-daygrid-event {
+     background-color: #007bff;
+     color: #ffffff;
+     border-radius: 5px;
+     padding: 5px;
+     width: 90%;
+     white-space: normal;
+     /* Permite que el texto se ajuste automáticamente */
+ }
+
+ .fc-daygrid-event:hover {
+     background-color: #0066cc;
+ }
+
+
+ .problem-section {
+     text-align: center;
+     max-width: 800px;
+     margin: 0 auto;
+     padding: 20px;
+
+ }
+
+ .problem-options {
+     margin-bottom: 20px;
+
+ }
+
+ #problem-container {
+     margin-bottom: 20px;
+ }
+
+ #solution-container {
+     margin-top: 20px;
+ }
+
+ #solution-container .solution {
+     margin-bottom: 10px;
+ }
+
+ .problem-section h2 {
+     font-size: 24px;
+     font-weight: bold;
+     color: #333333;
+ }
+
+ .problem-section p {
+     font-size: 16px;
+     color: #555555;
+ }
+
+ .problem-section button {
+     background-color: #0088cc;
+     color: #ffffff;
+     padding: 10px 20px;
+     border: none;
+     border-radius: 4px;
+     font-size: 16px;
+     cursor: pointer;
+ }
+
+ .problem-section button:hover {
+     background-color: #006699;
+ }
+
+ .problem-section input[type="text"] {
+     width: 100%;
+     padding: 10px;
+     border: 1px solid #cccccc;
+     border-radius: 4px;
+     font-size: 16px;
+     color: #333333;
+ }
+
+ .problem-section .solution {
+     background-color: #ffffff;
+     padding: 10px;
+     border: 1px solid #cccccc;
+     border-radius: 4px;
+     font-size: 16px;
+     color: #333333;
+ }
